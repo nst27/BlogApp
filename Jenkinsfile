@@ -5,12 +5,12 @@ pipeline{
   stages{
     stage("Hello"){
       steps{
-        echo "npm install"
+        sh "npm install"
       }
     }
     stage('Deploy'){
       steps{
-        sh "npm run
+        sh "npm start"
       }
     }
   }
